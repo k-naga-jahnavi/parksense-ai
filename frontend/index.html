@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1"
+/>
+
+<title>
+ParkSense AI
+</title>
+
+<link
+rel="stylesheet"
+href="style.css"
+/>
+
+<link
+rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>
+🚦 ParkSense AI
+</h1>
+
+<p>
+AI Driven Parking Intelligence & Traffic Congestion Analytics
+</p>
+
+</header>
+
+
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Total Records</h3>
+
+<h2 id="total">
+0
+</h2>
+
+</div>
+
+
+<div class="card">
+
+<h3>Police Stations</h3>
+
+<h2 id="stations">
+0
+</h2>
+
+</div>
+
+
+<div class="card">
+
+<h3>Junctions</h3>
+
+<h2 id="junctions">
+0
+</h2>
+
+</div>
+
+
+<div class="card">
+
+<h3>Vehicle Types</h3>
+
+<h2 id="vehicles">
+0
+</h2>
+
+</div>
+
+</div>
+
+
+
+<div class="buttons">
+
+<button id="hotspotBtn">
+
+Hotspots
+
+</button>
+
+
+<button id="vehicleBtn">
+
+Vehicles
+
+</button>
+
+
+<button id="violationBtn">
+
+Violations
+
+</button>
+
+</div>
+
+
+
+<section>
+
+<h2>
+Parking Analytics
+</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Location</th>
+
+<th>Total</th>
+
+<th>Latitude</th>
+
+<th>Longitude</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tbody">
+
+</tbody>
+
+</table>
+
+</section>
+
+
+
+<section>
+
+<h2>
+📍 Bangalore Parking Heatmap
+</h2>
+
+<div id="map"></div>
+
+</section>
+
+
+
+<section>
+
+<h2>
+📊 Analytics
+</h2>
+
+<canvas id="chart"></canvas>
+
+</section>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
