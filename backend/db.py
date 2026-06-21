@@ -9,7 +9,7 @@ def connect():
 
         user="root",
 
-        password="R7x$91kZ@fL#eB2p!",
+        password="YOUR_PASSWORD",
 
         database="parksense_ai",
 
